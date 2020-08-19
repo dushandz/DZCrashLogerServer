@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>崩溃解析</title>
+    </head>
+    <body>
+        <form name="upload" action="/upload" method="POST" enctype ="multipart/form-data">
+            <div>
+                <p>崩溃日志路径</p>
+                <input type="file" name="logFile" required>
+            <div>
+            <div>
+                <p>MCD 打包 buildID</p>
+                <input type="text" name="buildID" required>
+            </div>
+
+            <div>
+                <input type="checkbox" name="iOS14" value="iOS14">iOS14<br>
+            </div>
+            <input type="submit" value="提交" >
+        </form>
+    </body>
+</html>
